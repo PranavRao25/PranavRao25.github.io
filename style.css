@@ -173,6 +173,7 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab {
 	display: block;
+	border: solid black 2px;
 }
 
 /* Services */
