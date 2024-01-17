@@ -162,7 +162,7 @@ nav ul li a:hover::after{
 	margin: 10px 0;
 }
 .tab-contents ul li span {
-	color: #864AF9;
+	color: #fff;
 	font-size: 18px;
 }
 
@@ -173,7 +173,7 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab {
 	display: block;
-	border: solid black 2px;
+	fill: #864AF9;
 }
 
 /* Services */
