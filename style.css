@@ -168,6 +168,7 @@ nav ul li a:hover::after{
 
 .tab-contents {
 	display: none;
+	border: solid black 2px;
 }
 
 .tab-contents.active-tab {
