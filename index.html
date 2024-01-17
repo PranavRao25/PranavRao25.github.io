@@ -1,0 +1,178 @@
+<!---->
+<!DOCTYPE html> <!-- Informs the browser that this is a HTML doc -->
+<html lang="en"> <!-- Language is English -->
+
+<head>
+	<meta charset="UTF-8"> <!-- Character Set UTF-8 -->
+	<title>Portfolio Website of Pranav Rao</title> <!-- Page Title -->
+	<meta name="viewport" content="width=device-width,initial-scale=1"> <!-- To fit all of the screen sizes -->
+	<link rel="stylesheet" href="style.css"> <!-- Stylesheet link added -->
+	<script src="https://kit.fontawesome.com/10634916a9.js" crossorigin="anonymous"></script> <!-- Scripting added -->
+</head>
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+<div id="header">
+	<div class="container">	
+		<nav>
+			<ul>
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-text">
+			<h1>Hi, I'm <span>Pranav Rao</span>!</h1>
+		</div>
+		<div class="header-cred">Taken by me at IIT Palakkad</div>
+	</div>
+</div>
+
+<!-- about -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="files/images/me.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="subtitle">About Me</h1>
+				<p>
+					I'm currently a 3rd Year BTech CS Undergrad student at IIT Palakkad.<br>
+					My Career Objective is to be part of technologies which contribute towards the betterment of the future.<br>
+					My Areas of Interest are Data Science and Quantum Computing.<br>
+
+				</p>
+
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+					<p class="tab-links" onclick="opentab('courses')">Key Courses</p>
+				</div>
+
+				<div class="tab-contents active-tab" id="skills"> <!-- Skills -->
+					<ul>
+						<li><span>Programming Languages</span> <br>Python, C</li>
+						<li><span>Libraries</span><br> Qiskit, Scikit Learn, Pandas, Numpy</li>
+						<li><span>Tools</span><br> Git, LaTeX</li>
+						<li><span>Quantum Computing</span><br> Utilise algorithms such as QFT, QAOA, QPE</li>
+						<li><span>Machine Learning</span><br> Build models of Regression, Random Forests, Neural Networks, GMMs, SVMs</li>
+					</ul>
+				</div>
+
+				<div class="tab-contents" id="experience"> <!-- Education -->
+					<ul>
+						<li><span>ML</span><br>Machine Learning</li>
+						<li><span>AI</span><br>Aritifical Intelligence</li>
+						<li><span>QC</span><br>Quantum Computing</li>
+					</ul>
+				</div>
+
+				<div class="tab-contents" id="education"> <!-- Experience -->
+					<ul>
+						<li><span>BTech CSE</span>: 8.7<br>IIT Palakkad</li>
+						<li><span>Senior Secondary</span>: 97%<br>New Horizons Scholars School (CBSE)</li>
+						<li><span>Junior Secondary</span>: 96%<br>Dhyan Ganga International School (ICSE)</li>
+					</ul>
+				</div>
+
+				<div class="tab-contents" id="courses">
+					<ul>
+						<li><span>NPTEL Introduction to Machine Learning</span></li>
+						<li><span>Deep Learning</span></li>
+						<li><span>Quantum Computing</span></li>
+						<li><span>Cryptography</span></li>
+						<li><span>Numerical Analysis</span></li>
+						<li><span>Algebra</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Service (Projects) -->
+<div id="services">
+	<div class="container">
+		<h1 class="subtitle">My Projects</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-atom"></i>
+				<h2>Cooperative Games with Entanglement</h2>
+				<p>Find Games where using Entanglement is advantageous</p>
+				<a href="files/Effect of Entanglement on Cooperative Games.pdf" target="_blank">
+					learn more
+				</a>
+			</div>
+
+			<div>
+				<i class="fa-solid fa-gamepad"></i>
+				<h2>Tic-Tac-Toe</h2>
+				<p>Play against an AI</p>
+				<a href="https://github.com/PranavRao25/Tic-Tac-Toe" target="_blank">
+					learn more
+				</a>
+			</div>
+
+			<div>
+				<i class="fa-solid fa-font"></i>
+				<h2>Spell Checker</h2>
+				<p>Get your documents corrected</p>
+				<a href="https://github.com/PranavRao25/Spell-Checker" target="_blank">
+					learn more
+				</a>
+			</div>
+
+			<div>
+				<i class="fa-solid fa-plane"></i>
+				<h2>Passenger Reaccomodation of Affected Flights</h2>
+				<p>Quantum Solution to a Logistic Problem, part of the Inter IIT Tech Meet 2023</p>
+				<a href="files/Team_79_Mphasis_Report.pdf" target="_blank">
+					learn more
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Contact Me -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="subtitle">Contact Me</h1>
+				
+				<p> <i class="fa-solid fa-envelope"></i> pranavrao2500@gmail.com </p> <!-- Add email id here -->
+				<p> <i class="fa-solid fa-phone"></i> +91 9324609133 </p> <!-- Add phone number here -->
+
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/pranav-rao-114887225/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <!-- Add linkedin link here-->
+					<a href="https://github.com/PranavRao25" target="_blank"><i class="fa-brands fa-github"></i></a> <!-- Add Github link here-->
+				</div>
+
+				<a href="files/Pranav_Rao_Resume.pdf" download class="btn btn2" target="_blank">Download Resume</a>
+			</div>
+
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="run.js"></script>
+
+</body>
+</html>
