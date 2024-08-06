@@ -309,20 +309,31 @@ nav ul li a:hover::after{
 /* Contact */
 
 .contact-left {
-	flex-basis: 35%;
+	display: flex;
+	justify-content: space-around;
+  width: 100%;
 }
 
-.contact-right {
-	flex-basis: 60%;
+.contact-left .subtitle_contact {
+/*	padding: 50%;*/
+	font-size: 80px;	
+	font-weight: 800;
+	color: #080808;
 }
 
 .contact-left p {
-	margin-top: 30px;
+	float:left;
+	width:100%;
+	right: 0px;
+}
+
+.contact-left .phone .mail {
+	display: flex;
 }
 
 .contact-left p i {
 	color: #864AF9;
-	margin-right: 15px;
+	margin-right: 50px;
 	font-size: 25px;
 }
 
@@ -333,7 +344,7 @@ nav ul li a:hover::after{
 .social-icons a {
 	text-decoration: none;
 	font-size: 30px;
-	margin-right: 15px;
+	margin-right: 50px;
 	color: #080808;
 	display: inline-block;
 	transition: transform 0.5s;
@@ -347,10 +358,7 @@ nav ul li a:hover::after{
 .btn.btn2 {
 	display: inline-block;
 	background: #864AF9;
-}
-
-.contact-right form {
-	width: 100%;
+	right: 650px;
 }
 
 form input, form textarea {
